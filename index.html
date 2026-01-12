@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IHaveEverythingYouNeed</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffffff;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.4rem;
+  color: #111;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff7a00;
+}
+
+section {
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: auto;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 40px;
+}
+
+.hero h2 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  background: #e66d00;
+  transform: scale(1.05);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ff7a00;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 420px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+  </style>
+</head>
+<body><header>
+  <nav>
+    <h1>IHaveEverythingYouNeed</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header><section class="hero" id="home">
+  <h2>Everything You Need, In One Place</h2>
+  <p>A modern school-based online store concept offering food, fashion, gadgets, and transport needs.</p>
+  <button class="btn" onclick="alert('Thank you for visiting IHaveEverythingYouNeed!')">Explore Products</button>
+</section><section id="about">
+  <h2>About Us</h2>
+  <p>IHaveEverythingYouNeed is a school performance task website designed to demonstrate an online business that provides different essential products in one platform. It focuses on convenience, affordability, and simplicity.</p>
+</section><section id="products">
+  <h2>Our Products</h2>
+  <div class="products">
+    <div class="card">
+      <h3>Musubi</h3>
+      <p>A delicious rice snack topped with savory meat and sauce, perfect for quick meals.</p>
+      <p class="price">₱50.00</p>
+    </div><div class="card">
+  <h3>Cellphone</h3>
+  <p>A budget-friendly smartphone suitable for daily communication and online classes.</p>
+  <p class="price">₱4,999.00</p>
+</div>
+
+<div class="card">
+  <h3>Benten Shirt</h3>
+  <p>A stylish and comfortable graphic shirt inspired by popular cartoon designs.</p>
+  <p class="price">₱350.00</p>
+</div>
+
+<div class="card">
+  <h3>Bike</h3>
+  <p>A durable bicycle ideal for daily transport, exercise, and short-distance travel.</p>
+  <p class="price">₱6,500.00</p>
+</div>
+
+  </div>
+</section><section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="event.preventDefault(); alert('Your message has been sent successfully!');">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section><footer>
+  <p>&copy; 2026 IHaveEverythingYouNeed | School Performance Task</p>
+</footer></body>
+</html>
